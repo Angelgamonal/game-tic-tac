@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Trabajo Final</title>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="section-logo">
+				<img
+					class="logo-header"
+					src="./img/logo-certus.webp"
+					alt="certus"
+				/>
+				<nav>
+					<div>
+						<a href="./index.html">Juego 1</a>
+					</div>
+					<div>
+						<a href="./game-two.html">Juego 2</a>
+					</div>
+				</nav>
+				<img
+					class="logo-header"
+					src="./img/footer-logo.webp"
+					alt="Beca Jovenes Bicentenario"
+				/>
+			</div>
+		</header>
+		<main>
+			<div>
+				<h1>Juego del Michi con Sweetalert</h1>
+				<hr />
+			</div>
+
+			<div class="container-game">
+				<section class="section-game">
+					<div class="item-casilla">
+						<button id="btn-1"></button>
+						<button id="btn-2"></button>
+						<button id="btn-3"></button>
+					</div>
+					<div class="item-casilla">
+						<button id="btn-4"></button>
+						<button id="btn-5"></button>
+						<button id="btn-6"></button>
+					</div>
+					<div class="item-casilla">
+						<button id="btn-7"></button>
+						<button id="btn-8"></button>
+						<button id="btn-9"></button>
+					</div>
+					<div class="buttons-content">
+						<button class="button-reset" id="btn-reset">
+							Limpiar Casillas
+						</button>
+						<button class="button-reset" id="btn-reset-game">
+							Reiniciar Puntuación
+						</button>
+					</div>
+				</section>
+				<section class="section-game">
+					<div>
+						<h2>Tabla de Puntuación</h2>
+						<hr />
+
+						<div class="section-score">
+							<div class="content-team">
+								<div class="table-score">
+									<h3 class="item-team">X</h3>
+									<span class="number-score" id="score-x"
+										>0</span
+									>
+								</div>
+
+								<div class="table-score">
+									<h3 class="item-team">O</h3>
+									<span class="number-score" id="score-o"
+										>0</span
+									>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-temporizador">
+							<div class="item-tempo">
+								<h3 id="turn-team">Turno de " X "</h3>
+							</div>
+							<div class="item-tempo">
+								<button id="btn-time" class="button-reset">
+									Temporizador
+								</button>
+							</div>
+							<div class="item-tempo">
+								<span id="time-second">00:00</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<div class="img-footer">
+				<img src="./img/logo-white.webp" alt="Beca Bicentenario " />
+			</div>
+			<div class="content-button">
+				<h3>Desarrollado por <span>Angel Gamonal :)</span></h3>
+			</div>
+		</footer>
+
+		<script src="./js/app.js"></script>
+	</body>
+</html>
